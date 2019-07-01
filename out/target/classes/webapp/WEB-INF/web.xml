@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="WebApp_ID" version="3.0">
+      <display-name>out</display-name>
+  
+  <servlet>
+    <servlet-name>selectAdminServlet</servlet-name>
+    <servlet-class>servlet.selectAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectAdminServlet</servlet-name>
+    <url-pattern>/selectAdmin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>selectProjectServlet</servlet-name>
+    <servlet-class>servlet.selectProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectProjectServlet</servlet-name>
+    <url-pattern>/selectProject</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>insertImpleServlet</servlet-name>
+    <servlet-class>servlet.insertImpleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertImpleServlet</servlet-name>
+    <url-pattern>/insertImple</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>insertFeeServlet</servlet-name>
+    <servlet-class>servlet.insertFeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertFeeServlet</servlet-name>
+    <url-pattern>/insertFee</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deleteAdminServlet</servlet-name>
+    <servlet-class>servlet.deleteAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteAdminServlet</servlet-name>
+    <url-pattern>/deleteAdmin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>insertAdminServlet</servlet-name>
+    <servlet-class>servlet.insertAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertAdminServlet</servlet-name>
+    <url-pattern>/insertAdmin</url-pattern>
+  </servlet-mapping>
+</web-app>
