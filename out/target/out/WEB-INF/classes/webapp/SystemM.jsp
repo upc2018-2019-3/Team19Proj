@@ -53,7 +53,7 @@
             <td><%=admin.getAdminname()%></td>
             <td><%=admin.getAdminaccount()%></td>
             <td><%=admin.getPassword()%></td>
-            <td><a class="btn btn-danger" href="/out/deleteAdmin?adminid=<%=admin.getAdminid()%>">删除</a></td>>
+            <td><a class="btn btn-danger" href="/out/deleteAdmin?adminid=<%=admin.getAdminid()%>">删除</a></td>
         </tr>
             <% } %>
 

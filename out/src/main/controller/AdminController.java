@@ -23,7 +23,7 @@ public class AdminController {
         try {
             Statement statement = connection.createStatement();
             String sql = "select * from admin where adminaccount =\"" + account +"\"";
-            System.out.println(sql);
+           // System.out.println(sql);
             ResultSet rs = statement.executeQuery(sql);
             //Admin admin = new Admin();
             while (rs.next()) {

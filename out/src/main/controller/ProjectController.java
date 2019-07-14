@@ -57,6 +57,22 @@ public class ProjectController {
         }
 
     }
+
+
+    public void deleteProject(String projectId){
+        try{
+            Statement statement = connection.createStatement();
+            statement.executeUpdate("set foreign_key_checks=0");
+            String sql = "delete from project where projectid=\""+projectId+"\"";
+            statement.executeUpdate(sql);
+            statement.executeUpdate("set foreign_key_checks=1");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
+
     public static void main(String[] args){
         ProjectController projectController = new ProjectController();
 

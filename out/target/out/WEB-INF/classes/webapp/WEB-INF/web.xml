@@ -58,4 +58,41 @@
     <servlet-name>insertAdminServlet</servlet-name>
     <url-pattern>/insertAdmin</url-pattern>
   </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+      <servlet-name>deleteProjectServlet</servlet-name>
+      <servlet-class>servlet.deleteProjectServlet</servlet-class>
+    </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteProjectServlet</servlet-name>
+    <url-pattern>/deleteproject</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>insertProjectServlet</servlet-name>
+    <servlet-class>servlet.insertProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertProjectServlet</servlet-name>
+    <url-pattern>/insertproject</url-pattern>
+  </servlet-mapping>
 </web-app>

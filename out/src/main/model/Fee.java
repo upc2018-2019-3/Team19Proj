@@ -61,8 +61,10 @@ public class Fee {
         return "Fee{" +
                 "projectid=" + projectid +
                 ", impleid=" + impleid +
-                ", projectfee='" + projectfee + '\'' +
-                ", implefee='" + implefee + '\'' +
+                ", projectfee=" + projectfee +
+                ", implefee=" + implefee +
+                ", starttime='" + starttime + '\'' +
+                ", endtime='" + endtime + '\'' +
                 '}';
     }
 }

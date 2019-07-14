@@ -62,8 +62,29 @@ button:hover{
 .regist{
 	position:relative;
 	left:60%;
-	right:40;
+	right:40%;
 	margin-top: 3%;
 }
-
-
+#checkpassword{
+	position:relative;
+	left:23%;
+	right:23%;
+	width:54%;
+	height: 26px;
+	margin: 0 auto;
+}
+#adminname{
+	position:relative;
+	left:23%;
+	right:23%;
+	width:54%;
+	height: 26px;
+	margin-top: 2%;
+}
+.agreep{
+	position:relative;
+	left:23%;
+	right:23%;
+	width:54%;
+	margin-top: 3%;
+}

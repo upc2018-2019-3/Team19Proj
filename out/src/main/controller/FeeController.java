@@ -34,8 +34,8 @@ public class FeeController {
     }
     public static void main(String[] args){
         Fee fee = new Fee();
-        fee.setProjectid(10);
-        fee.setImpleid(1);
+        fee.setProjectid(8);
+        fee.setImpleid(12);
         fee.setProjectfee(1265.2f);
         fee.setImplefee(1256.4f);
         fee.setStarttime("2019-6-31");

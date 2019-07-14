@@ -45,6 +45,7 @@
                 <td><%=project.getProjectname()%></td>
                 <td><%=project.getOverview()%></td>
                 <td><%=project.getDoc()%></td>
+                <td><a class="btn btn-danger" href="/out/deleteproject?projectid=<%=project.getProjectid()%>">删除</a></td>
             </tr>
             <%}%>
     </tbody>
@@ -61,28 +62,28 @@
                 <h4 class="modal-title" id="myModalLabel">添加项目</h4>
             </div>
             <div class="modal-body">
-			<form action="">
-				 <div class="form-group">
-            		<label for="项目编号" class="control-label">项目编号</label>
-            		<input type="text" class="form-control" id="项目编号">
-          		 </div>
-          		  <div class="form-group">
-            		<label for="项目名称" class="control-label">项目名称</label>
-            		<input type="text" class="form-control" id="项目名称">
-          		 </div>
-          		  <div class="form-group">
-            		<label for="项目概要" class="control-label">项目概要</label>
-            		<input type="text" class="form-control" id="项目概要">
-          		 </div>
-          		  <div class="form-group">
-            		<label for="项目文本" class="control-label">项目文本</label>
-            		<input id="f_upload" type="file" class="file" id="项目文本" />
-          		 </div>
-			</form>
+                <form action="/out/insertproject" method="post">
+                    <div class="form-group">
+                        <label for="项目编号" class="control-label">项目编号</label>
+                        <input type="text" class="form-control" name="projectid" id="项目编号">
+                    </div>
+                    <div class="form-group">
+                        <label for="项目名称" class="control-label">项目名称</label>
+                        <input type="text" class="form-control" name="projectname" id="项目名称">
+                    </div>
+                    <div class="form-group">
+                        <label for="项目概要" class="control-label">项目概要</label>
+                        <input type="text" class="form-control" name="overview" id="项目概要">
+                    </div>
+                    <div class="form-group">
+                        <label for="项目文本" class="control-label">项目文本</label>
+                        <input type="text" class="form-control" name="doc" id="项目文本" />
+                    </div>
+			    </form>
            </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                <button type="button" class="btn btn-primary">提交</button>
+                <button type="submit" class="btn btn-primary">提交</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
@@ -94,7 +95,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">删除项目</h4>
+                <h4 class="modal-title" id="myModalLabel2">删除项目</h4>
             </div>
             <div class="modal-body">
            </div>

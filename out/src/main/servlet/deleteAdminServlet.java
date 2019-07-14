@@ -17,6 +17,7 @@ public class deleteAdminServlet extends HttpServlet {
         adminController.deleteAdmin(id);
         response.sendRedirect("/out/selectAdmin");
 
+
 //        String url = request.getRequestURI();
 //        PrintWriter printWriter = response.getWriter();
 //        printWriter.println(adminid);
