@@ -95,4 +95,69 @@
     <servlet-name>insertProjectServlet</servlet-name>
     <url-pattern>/insertproject</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>selectImplement</servlet-name>
+    <servlet-class>servlet.selectImpleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectImplement</servlet-name>
+    <url-pattern>/selectimple</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>selectFeeServlet</servlet-name>
+    <servlet-class>servlet.selectFeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectFeeServlet</servlet-name>
+    <url-pattern>/selectfee</url-pattern>
+  </servlet-mapping>
+
+
+
+  <!--用户页面-->
+  
+  <servlet>
+    <servlet-name>selectUser</servlet-name>
+    <servlet-class>servlet.user.selectUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectUser</servlet-name>
+    <url-pattern>/selectuser</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>selectUserProject</servlet-name>
+    <servlet-class>servlet.user.selectUserProject</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectUserProject</servlet-name>
+    <url-pattern>/selectuserproject</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>selectUserImple</servlet-name>
+    <servlet-class>servlet.user.selectUserImple</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectUserImple</servlet-name>
+    <url-pattern>/selectuserimple</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>selectUserFee</servlet-name>
+    <servlet-class>servlet.user.selectUserFee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectUserFee</servlet-name>
+    <url-pattern>/selectuserfee</url-pattern>
+  </servlet-mapping>
+
+
 </web-app>
+  
+

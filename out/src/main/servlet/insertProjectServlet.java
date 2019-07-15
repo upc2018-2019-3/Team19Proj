@@ -24,8 +24,8 @@ public class insertProjectServlet extends HttpServlet {
         project.setOverview(overview);
         project.setDoc(doc);
 
-        PrintWriter writer = response.getWriter();
-        writer.println(project.toString());
+       // PrintWriter writer = response.getWriter();
+        //writer.println(project.toString());
 
         ProjectController projectController = new ProjectController();
         projectController.insertProject(project);

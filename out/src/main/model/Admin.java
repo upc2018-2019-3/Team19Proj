@@ -1,5 +1,7 @@
 package model;
 
+import com.github.javafaker.Name;
+
 public class Admin {
     private int adminid;
     private String adminname;
@@ -47,4 +49,5 @@ public class Admin {
                 ", password='" + password + '\'' +
                 '}';
     }
+
 }

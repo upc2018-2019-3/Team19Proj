@@ -19,7 +19,7 @@ public class selectProjectServlet extends HttpServlet {
         List<Project> list = new ArrayList<>();
         list = projectController.selectAllProject();
         request.setAttribute("list",list);
-        request.getRequestDispatcher("ProjectM.jsp").forward(request,response);
+        request.getRequestDispatcher("adminPages/ProjectM.jsp").forward(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{

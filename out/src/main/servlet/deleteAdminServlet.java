@@ -1,6 +1,7 @@
 package servlet;
 
 import controller.AdminController;
+import controller.UserController;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,11 +11,11 @@ import java.io.PrintWriter;
 
 public class deleteAdminServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)throws SecurityException, IOException {
-        String adminid = request.getParameter("adminid");
+        String userid = request.getParameter("userid");
 
-        AdminController adminController = new AdminController();
-        int id = Integer.parseInt(adminid.trim());
-        adminController.deleteAdmin(id);
+        UserController controller = new UserController();
+        int id = Integer.parseInt(userid.trim());
+        controller.deleteUser(id);
         response.sendRedirect("/out/selectAdmin");
 
 

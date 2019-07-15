@@ -7,6 +7,7 @@ public class Fee {
     private float implefee;
     private String starttime;
     private String endtime;
+    private int userid;
 
     public int getProjectid() {
         return projectid;
@@ -56,6 +57,14 @@ public class Fee {
         this.endtime = endtime;
     }
 
+    public int getUserid() {
+        return userid;
+    }
+
+    public void setUserid(int userid) {
+        this.userid = userid;
+    }
+
     @Override
     public String toString() {
         return "Fee{" +
@@ -65,6 +74,7 @@ public class Fee {
                 ", implefee=" + implefee +
                 ", starttime='" + starttime + '\'' +
                 ", endtime='" + endtime + '\'' +
+                ", userid=" + userid +
                 '}';
     }
 }

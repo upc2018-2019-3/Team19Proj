@@ -8,6 +8,7 @@ public class Implement {
     private int projectid;
     private String implestart;
     private String impleend;
+    private int userid;
 
     public int getImpleid() {
         return impleid;
@@ -49,14 +50,23 @@ public class Implement {
         this.impleend = impleend;
     }
 
+    public int getUserid() {
+        return userid;
+    }
+
+    public void setUserid(int userid) {
+        this.userid = userid;
+    }
+
     @Override
     public String toString() {
         return "Implement{" +
                 "impleid=" + impleid +
                 ", implename='" + implename + '\'' +
                 ", projectid=" + projectid +
-                ", implestart=" + implestart +
-                ", impleend=" + impleend +
+                ", implestart='" + implestart + '\'' +
+                ", impleend='" + impleend + '\'' +
+                ", userid=" + userid +
                 '}';
     }
 }

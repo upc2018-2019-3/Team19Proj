@@ -2,7 +2,9 @@ package servlet;
 
 import com.mysql.cj.api.Session;
 import controller.AdminController;
+import controller.UserController;
 import model.Admin;
+import model.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,11 +22,12 @@ public class selectAdminServlet extends HttpServlet {
         //PrintWriter pw = resp.getWriter();
         //pw.println("hello servlet");
 
-        AdminController adminController = new AdminController();
-        List<Admin> list = new ArrayList<>();
-        list = adminController.selectAllAdmin();
+        UserController controller = new UserController();
+        List<User> list = controller.selectAllUser();
         req.setAttribute("list",list);
-        req.getRequestDispatcher("SystemM.jsp").forward(req,resp);
+        req.getRequestDispatcher("adminPages/SystemM.jsp").forward(req,resp);
+        //PrintWriter writer = resp.getWriter();
+        //writer.println(list.toString());
     }
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
