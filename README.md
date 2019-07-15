@@ -10,21 +10,25 @@
 
 
 
-## 技术
+## 使用技术及工具
 
 ### 前端
 
 使用语言：html5、css3、js
 
-编辑工具：Dreamweaver
+编辑工具：Dreamweaver cs6
 
 框架：BootStrap，JQuery
 
 ### 后端
 
-语言：java
+语言：java 1.8
 
-IDE ：IDEA
+IDE ：IDEA 2019.1.3
 
-构建工具：maven
+构建工具：maven 3.6
+
+### 数据库
+
+mysql 5.6--x64
 
